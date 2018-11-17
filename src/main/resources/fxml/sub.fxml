@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import org.kordamp.bootstrapfx.scene.layout.Panel?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<!--第二个界面，用了网格布局，2行3列-->
+<GridPane hgap="50" vgap="10">
+    <padding>
+        <Insets top="10" left="20" bottom="20" right="20"/>
+    </padding>
+    <!--bootstrap的Panel组件，分为顶部的title和中间的body区域-->
+    <Panel GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"
+           styleClass="panel-default" prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="故事"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="真实或虚幻的故事"/>
+                <ImageView>
+                    <Image url="/img/1.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+
+    <Panel GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"
+           styleClass="panel-success"  prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="摄影"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="用镜头记录精彩瞬间"/>
+                <ImageView>
+                    <Image url="/img/2.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+
+    <Panel GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"
+           styleClass="panel-warning"  prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="旅行"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="眼睛或身体总有一个在路上"/>
+                <ImageView>
+                    <Image url="/img/3.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+
+    <Panel GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"
+           styleClass="panel-primary" prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="故事"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="真实或虚幻的故事"/>
+                <ImageView>
+                    <Image url="/img/1.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+
+    <Panel GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"
+           styleClass="panel-info" prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="摄影"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="用镜头记录精彩瞬间"/>
+                <ImageView>
+                    <Image url="/img/2.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+
+    <Panel GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"
+           styleClass="panel-danger" prefWidth="260" prefHeight="260">
+        <heading>
+            <Label styleClass="h3" text="旅行"/>
+        </heading>
+        <body>
+            <VBox spacing="20">
+                <Label text="眼睛或身体总有一个在路上"/>
+                <ImageView>
+                    <Image url="/img/3.png"/>
+                </ImageView>
+                <padding>
+                    <Insets top="10" bottom="10" left="30"/>
+                </padding>
+            </VBox>
+        </body>
+    </Panel>
+</GridPane>
