@@ -51,11 +51,6 @@
                         AnchorPane.leftAnchor="130"
                         styleClass="follow_btn"/>
             </AnchorPane>
-
-
-
-
-
             <AnchorPane  GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS" styleClass="anchor_pane">
                 <ImageView fitHeight="120.0" fitWidth="120.0" AnchorPane.topAnchor="-40" AnchorPane.leftAnchor="140">
                     <Image url="/img/2.png"/>
@@ -86,6 +81,18 @@
     </center>
 
     <bottom>
-
+        <FlowPane alignment="CENTER" prefHeight="50"
+                  hgap="20"
+                  style="-fx-background-color: #DEDEDE">
+            <Button text="SUCCESS" styleClass="btn,btn-success"/>
+            <Button text="PRIMARY" styleClass="btn,btn-primary"/>
+            <Button text="INFO" styleClass="btn,btn-info"/>
+            <Button text="WARNING" styleClass="btn,btn-warning"/>
+            <Button text="DANGER" styleClass="btn,btn-danger"/>
+            <Button text="DEFAULT" styleClass="btn,btn-default"/>
+            <padding>
+                <Insets bottom="30" top="20"/>
+            </padding>
+        </FlowPane>
     </bottom>
 </BorderPane>
