@@ -1,0 +1,36 @@
+.root{
+    -fx-background-image: url("http://pdnalatfa.bkt.clouddn.com/18-11-16/22240316.jpg");
+}
+.hyperlink{
+    -fx-font-size: 24px;
+    -fx-underline: false;
+}
+
+.hyperlink:hover{
+    -fx-text-fill: #FFFFFF;
+}
+.hyperlink:visited{
+    -fx-text-fill: rgb(11, 148, 200);
+}
+.anchor_pane{
+    -fx-pref-height: 400px;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 1.5em;
+}
+.text_bold{
+     -fx-font-size: 24px;
+    -fx-text-fill: rgb(38, 83, 116);
+ }
+.content{
+    -fx-max-width: 200px;
+    -fx-font-size: 14px;
+}
+.follow_btn{
+    -fx-pref-width: 120px;
+    -fx-pref-height: 45px;
+    -fx-background-color: rgb(66, 192, 46);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+}

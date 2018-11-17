@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.niit.fxstudy.FirstController">
+        <top>
+            <AnchorPane prefHeight="50.0">
+                <Hyperlink text="简书" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20"/>
+                <Button styleClass="btn,btn-info" text="发现"
+                        AnchorPane.topAnchor="10" AnchorPane.leftAnchor="120" />
+                <ImageView fitHeight="40.0" fitWidth="40.0" AnchorPane.topAnchor="10" AnchorPane.rightAnchor="20">
+                    <Image url="/img/me.jpg"/>
+                </ImageView>
+            </AnchorPane>
+
+        </top>
+    <center>
+        <GridPane hgap="20" vgap="20">
+
+            <AnchorPane
+                    GridPane.columnIndex="0"
+                    GridPane.rowIndex="0"
+                    GridPane.hgrow="ALWAYS"
+                    styleClass="anchor_pane">
+                <ImageView
+                        fitHeight="120.0"
+                        fitWidth="120.0"
+                        AnchorPane.topAnchor="-40"
+                        AnchorPane.leftAnchor="140">
+                    <Image url="/img/1.png"/>
+                </ImageView>
+                <Label text="故事"
+                       styleClass="text_bold"
+                       AnchorPane.topAnchor="120"
+                       AnchorPane.leftAnchor="170"/>
+                <Label styleClass="p"
+                       wrapText="true" maxWidth="200"
+                       text="真实或虚幻的故事真实或虚幻的故事真实或虚幻的故事真实或虚幻的故事"
+                       AnchorPane.topAnchor="190"
+                       AnchorPane.leftAnchor="110"
+                       style="-fx-font-size: 14px"/>
+                <Button text="关注"
+                        AnchorPane.bottomAnchor="80"
+                        AnchorPane.leftAnchor="130"
+                        styleClass="follow_btn"/>
+            </AnchorPane>
+
+
+
+
+
+            <AnchorPane  GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS" styleClass="anchor_pane">
+                <ImageView fitHeight="120.0" fitWidth="120.0" AnchorPane.topAnchor="-40" AnchorPane.leftAnchor="140">
+                    <Image url="/img/2.png"/>
+                </ImageView>
+                <Label text="摄影" styleClass="text_bold" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="170"/>
+                <Label styleClass="p" wrapText="true" maxWidth="200"
+                       text="用镜头记录下每个精彩瞬间用镜头记录下每个精彩瞬间用镜头记录下每个精彩瞬间"
+                       AnchorPane.topAnchor="190"
+                       AnchorPane.leftAnchor="110" style="-fx-font-size: 14px"/>
+                <Button text="关注"  AnchorPane.bottomAnchor="80" AnchorPane.leftAnchor="130" styleClass="follow_btn"/>
+            </AnchorPane>
+            <AnchorPane  GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS" styleClass="anchor_pane">
+                <ImageView fitHeight="120.0" fitWidth="120.0" AnchorPane.topAnchor="-40" AnchorPane.leftAnchor="140">
+                    <Image url="/img/3.png"/>
+                </ImageView>
+                <Label text="旅行" styleClass="text_bold" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="170"/>
+                <Label styleClass="p" wrapText="true" maxWidth="200"
+                       text="眼睛和身体总有一个在路上眼睛和身体总有一个在路上眼睛和身体总有一个在路上眼睛和身体总有一个在路上"
+                       AnchorPane.topAnchor="190"
+                       AnchorPane.leftAnchor="110"
+                       style="-fx-font-size: 14px;"/>
+                <Button text="关注"  AnchorPane.bottomAnchor="80" AnchorPane.leftAnchor="130" styleClass="follow_btn"/>
+            </AnchorPane>
+            <padding>
+                <Insets top="80" left="20" right="20"/>
+            </padding>
+        </GridPane>
+    </center>
+
+    <bottom>
+
+    </bottom>
+</BorderPane>
