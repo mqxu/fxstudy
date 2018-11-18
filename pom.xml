@@ -34,12 +34,6 @@
             <artifactId>richtextfx</artifactId>
             <version>0.9.1</version>
         </dependency>
-        <!--hutoolJava工具集-->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>4.1.19</version>
-        </dependency>
         <!--JUnit依赖-->
         <dependency>
             <groupId>junit</groupId>
