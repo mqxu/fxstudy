@@ -25,3 +25,4 @@
 - 效果图
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/62046807.jpg)
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/36019721.jpg)
+- [预览视频](https://www.screencast.com/t/Sd7QwLiVUVN)
