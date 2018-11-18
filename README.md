@@ -8,3 +8,4 @@
 - StackPaneController
 - stackpane.fxml
 - 实现了一种切换效果
+- [效果预览](https://www.screencast.com/t/FWA6tH0wp)
