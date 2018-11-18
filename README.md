@@ -22,7 +22,8 @@
 - 静态部分使用BorderPane和FlowPane
 - 循环遍历数据，每个专题对象采用AnchorPane展示
 - 根据关键词搜索
+- 优化了UI，原型的专题logo图，采用了阿里巴巴的iconfont图标库素材
 - 效果图
-![](http://pdnalatfa.bkt.clouddn.com/18-11-18/85680873.jpg)
-![](http://pdnalatfa.bkt.clouddn.com/18-11-18/4023806.jpg)
-- [预览视频](https://www.screencast.com/t/Sd7QwLiVUVN)
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/86927644.jpg)
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/62319676.jpg)
+- [预览视频](https://www.screencast.com/t/j6fM0op64u)

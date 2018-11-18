@@ -3,9 +3,7 @@ package com.niit.fxstudy.topic;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -25,12 +23,12 @@ public class TopicController implements Initializable {
 
     //定义并初始化数据
     private Topic[] topics = new Topic[]{
-            new Topic("故事1", "1.png", "真实或虚幻的故事", 111, 123),
-            new Topic("摄影1", "2.png", "用镜头记录精彩瞬间", 222, 234),
-            new Topic("旅行1", "3.png", "眼睛或身体总有一个在路上", 333, 345),
-            new Topic("故事2", "1.png", "真实或虚幻的故事", 444, 456),
-            new Topic("摄影2", "2.png", "用镜头记录精彩瞬间", 555, 567),
-            new Topic("旅行2", "3.png", "眼睛或身体总有一个在路上", 666, 678)
+            new Topic("故事", "1.png", "真实或虚幻的故事", 111, 123),
+            new Topic("摄影", "2.png", "用镜头记录精彩瞬间", 222, 234),
+            new Topic("旅行", "3.png", "眼睛或身体总有一个在路上", 333, 345),
+            new Topic("美文", "4.png", "极光视界旗下的一个诗会", 444, 456),
+            new Topic("花园", "5.png", "双眸里繁星闪烁", 555, 567),
+            new Topic("美食", "6.png", "享受餐桌的美好时光", 666, 678)
     };
 
     @Override
@@ -55,11 +53,13 @@ public class TopicController implements Initializable {
             AnchorPane.setTopAnchor(logoView, -40.0);
             AnchorPane.setLeftAnchor(logoView, 60.0);
 
-            //创建Label对象，用来显示专题名称，设置样式并定位锚点
-            Label nameLabel = new Label(topic.getTopicName());
-            nameLabel.setStyle("-fx-font-size: 18px;");
-            AnchorPane.setTopAnchor(nameLabel, 60.0);
-            AnchorPane.setLeftAnchor(nameLabel, 80.0);
+            //创建HyperLink对象，用来显示专题名称，设置样式并定位锚点
+            Hyperlink nameLink = new Hyperlink(topic.getTopicName());
+            nameLink.setStyle("-fx-font-size: 18px;");
+            Tooltip tooltip = new Tooltip(topic.getTopicSummary());
+            nameLink.setTooltip(tooltip);
+            AnchorPane.setTopAnchor(nameLink, 60.0);
+            AnchorPane.setLeftAnchor(nameLink, 80.0);
 
             //创建喜欢数据的文本标签对象，并设置图标、定位锚点
             Label likeLabel = new Label(String.valueOf(topic.getLikes()));
@@ -85,13 +85,13 @@ public class TopicController implements Initializable {
 
             //创建关注按钮对象，设置样式并定位锚点
             Button followBtn = new Button("关注");
-            followBtn.setStyle("-fx-background-color: rgb(66, 192, 46);-fx-text-fill: #FFFFFF;-fx-font-size: 14px");
+            followBtn.setStyle("-fx-background-color: rgb(66, 192, 46);-fx-text-fill: #FFFFFF;-fx-font-size: 14px;");
             AnchorPane.setTopAnchor(followBtn, 130.0);
             AnchorPane.setLeftAnchor(followBtn, 75.0);
             ObservableList list = anchorPane.getChildren();
 
             //将组件批量加入anchorPane中
-            list.addAll(logoView, nameLabel, likeLabel, commentLabel, followBtn);
+            list.addAll(logoView, nameLink, likeLabel, commentLabel, followBtn);
             container.getChildren().add(anchorPane);
         }
     }
