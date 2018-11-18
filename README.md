@@ -3,11 +3,16 @@
 - 用maven插件打jar包
 - 使用了bootstrap的UI库
 - 学习使用JavaFX的常用布局和组件
-- [效果预览](https://www.screencast.com/t/Z5M9MeVbb0jK)
+- 效果图
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/32873701.jpg)
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/67941037.jpg)
+- [预览视频](https://www.screencast.com/t/Z5M9MeVbb0jK)
 
 ## 1.锚点布局示例程序
 - StackPaneApp
 - StackPaneController
 - stackpane.fxml
 - 实现了一种切换效果
-- [效果预览](https://www.screencast.com/t/FWA6tH0wp)
+- 效果图
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/26089141.jpg)
+- [预览视频](https://www.screencast.com/t/FWA6tH0wp)
