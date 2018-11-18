@@ -12,9 +12,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import org.kordamp.bootstrapfx.scene.layout.Panel?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.niit.fxstudy.stackpane.StackPaneController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-image: url(/img/bg.jpg);"
+            fx:controller="com.niit.fxstudy.stackpane.StackPaneController">
     <center>
-        <StackPane fx:id="mainPane">
+        <StackPane>
             <AnchorPane fx:id="warningPane" visible="false">
                 <Panel prefHeight="300" prefWidth="300" styleClass="panel-warning">
                     <heading>
@@ -70,15 +73,15 @@
                 </Panel>
             </AnchorPane>
             <padding>
-                <Insets top="70" left="170"/>
+                <Insets left="170" top="70" />
             </padding>
         </StackPane>
     </center>
     <bottom>
         <FlowPane alignment="CENTER" hgap="20">
-            <Button onAction="#showPrimaryPane" styleClass="btn-primary" text="PRIMARY" />
-            <Button onAction="#showSuccessPane" styleClass="btn-success" text="SUCCESS" />
-            <Button onAction="#showWarningPane" styleClass="btn-warning" text="WARNING" />
+            <Button fx:id="primaryBtn" onAction="#showPrimaryPane" styleClass="btn-primary" text="PRIMARY"/>
+            <Button fx:id="successBtn" onAction="#showSuccessPane" styleClass="btn-success" text="SUCCESS" />
+            <Button fx:id="warningBtn" onAction="#showWarningPane" styleClass="btn-warning" text="WARNING" />
             <padding>
                 <Insets bottom="20" top="20" />
             </padding>

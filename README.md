@@ -13,6 +13,7 @@
 - StackPaneController
 - stackpane.fxml
 - 实现了一种切换效果
+- 按钮上放置了图标
 - 效果图
-![](http://pdnalatfa.bkt.clouddn.com/18-11-18/26089141.jpg)
-- [预览视频](https://www.screencast.com/t/FWA6tH0wp)
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/43774190.jpg)
+- [预览视频](https://www.screencast.com/t/6NluCHVAliJL)
