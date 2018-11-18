@@ -17,3 +17,11 @@
 - 效果图
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/43774190.jpg)
 - [预览视频](https://www.screencast.com/t/6NluCHVAliJL)
+
+## 2.专题信息展示示例程序
+- 静态部分使用BorderPane和FlowPane
+- 循环遍历数据，每个专题对象采用AnchorPane展示
+- 根据关键词搜索
+- 效果图
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/62046807.jpg)
+![](http://pdnalatfa.bkt.clouddn.com/18-11-18/36019721.jpg)

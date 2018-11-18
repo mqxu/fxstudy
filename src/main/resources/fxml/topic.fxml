@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?language javascript?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.niit.fxstudy.topic.TopicController">
+    <top>
+        <AnchorPane style="-fx-background-color: rgb(120, 162, 184)" prefHeight="50">
+            <TextField text="请输入关键词" prefWidth="140" prefHeight="30" fx:id="inputField"
+                       AnchorPane.topAnchor="10" AnchorPane.leftAnchor="240"
+            onMouseClicked="inputField.setText('')"/>
+            <Button text="搜索" styleClass="btn-primary" prefWidth="80" prefHeight="30"
+                    AnchorPane.topAnchor="10" AnchorPane.leftAnchor="400" onAction="#search"/>
+            <Button text="重新加载" styleClass="btn-info" prefWidth="80" prefHeight="30"
+                    AnchorPane.topAnchor="10" AnchorPane.leftAnchor="500" onAction="#reload"/>
+        </AnchorPane>
+    </top>
+    <center>
+        <FlowPane hgap="30" vgap="70" style="-fx-background-image:url(/img/bg.jpg)" fx:id="container">
+            <padding>
+                <Insets top="60" left="80"/>
+            </padding>
+        </FlowPane>
+    </center>
+</BorderPane>
