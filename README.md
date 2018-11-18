@@ -2,6 +2,9 @@
 - 基于jar打包
 - 使用了bootstrap的UI库
 - 学习使用JavaFX的常用布局和组件
-- 增加一行说明
 
-[详细笔记](http://www.baidu.com)
+## 锚点布局示例程序
+- StackPaneApp
+- StackPaneController
+- stackpane.fxml
+- 实现了一种切换效果
