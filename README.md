@@ -34,4 +34,4 @@
 - 合理使用样式表
 - 效果图
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-20/52566791.jpg)
-- [预览视频]()
+- [预览视频](https://www.screencast.com/t/qgRwixeb)
