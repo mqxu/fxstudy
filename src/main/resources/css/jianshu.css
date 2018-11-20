@@ -1,0 +1,54 @@
+.root{
+    -fx-background-color: #FFFFFF;
+}
+.top_container{
+   -fx-pref-height: 55px;
+}
+.top_link{
+    -fx-font-size: 18px;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 35px;
+}
+.top_link:hover{
+    -fx-background-color: rgb(245, 245, 245);
+}
+.red_font{
+    -fx-text-fill: rgb(234, 111, 90);
+}
+.search_box{
+    -fx-pref-width: 160px;
+    -fx-pref-height: 35px;
+    -fx-background-color: rgb(238, 238, 238);
+    -fx-border-color: rgb(238, 238, 238);
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-text-fill: rgb(160, 160, 160);
+    -fx-font-size: 15px;
+}
+.title_link{
+    -fx-text-fill: rgb(51, 51, 51);
+    -fx-font-size: 18px;
+}
+.title_link:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+#writeBtn{
+    -fx-text-fill:#FFFFFF;
+    -fx-font-size: 16px;
+    -fx-background-color: rgb(234, 111, 90);
+    -fx-border-color: rgb(234, 111, 90);
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-pref-width: 110px;
+    -fx-pref-height: 25px;
+}
+.font_a{
+    -fx-font-size: 18px;
+    -fx-text-fill:  rgb(150, 150, 150);
+    -fx-padding: 8 0 0 0;
+}
+.content{
+    -fx-text-fill: #999;
+    -fx-font-size: 13px;
+}

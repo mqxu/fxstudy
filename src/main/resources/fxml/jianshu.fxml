@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.niit.fxstudy.jianshu.JianShuController">
+    <top>
+        <AnchorPane styleClass="top_container">
+            <ImageView  AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10" fx:id="logoImg">
+                <Image url="/jianshu/jianshu.png"/>
+            </ImageView>
+            <HBox spacing="5"
+                  AnchorPane.leftAnchor="150" AnchorPane.topAnchor="10">
+                <Label text="   发现" styleClass="top_link,red_font"/>
+                <Label text="   关注" styleClass="top_link"/>
+                <Label text="   消息" styleClass="top_link"/>
+                <padding>
+                    <Insets top="10" left="10"/>
+                </padding>
+            </HBox>
+            <HBox spacing="25"
+                  AnchorPane.rightAnchor="120" AnchorPane.topAnchor="10">
+                <Label text="Aa" styleClass="font_a"/>
+                <ImageView fx:id="userImg">
+                    <Image url="/jianshu/me.png"/>
+                </ImageView>
+                <Button fx:id="writeBtn" text="写文章"/>
+                <padding>
+                    <Insets  right="30" bottom="10"/>
+                </padding>
+            </HBox>
+            <TextField text="搜索" styleClass="search_box" fx:id="searchField"
+                       AnchorPane.leftAnchor="410" AnchorPane.topAnchor="18"/>
+            <Line AnchorPane.bottomAnchor="0"
+                  startY="50.0" endX="1400" endY="50.0"
+                  stroke="rgb(240,240,240)"/>
+        </AnchorPane>
+    </top>
+    <center>
+    </center>
+</BorderPane>
