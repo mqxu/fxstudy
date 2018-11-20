@@ -1,22 +1,28 @@
+/*全局设置*/
 .root{
     -fx-background-color: #FFFFFF;
 }
-.top_container{
+/*顶部容器*/
+.top-container{
    -fx-pref-height: 50px;
 }
-.top_link{
+/*顶部几个链接的字体样式*/
+.top-link{
     -fx-font-size: 18px;
     -fx-pref-width: 70px;
     -fx-pref-height: 35px;
 }
-.top_link:hover{
+/*链接的鼠标悬停样式*/
+.top-link:hover{
     -fx-background-color: rgb(245, 245, 245);
     -fx-cursor: hand;
 }
-.red_font{
+/*“发现”的红色字体*/
+.red-font{
     -fx-text-fill: rgb(234, 111, 90);
 }
-.search_box{
+/*搜索框样式*/
+.search-box{
     -fx-pref-width: 160px;
     -fx-pref-height: 35px;
     -fx-background-color: rgb(238, 238, 238);
@@ -26,13 +32,23 @@
     -fx-text-fill: rgb(160, 160, 160);
     -fx-font-size: 16px;
 }
-.font_a{
+/*搜索按钮(放大镜)*/
+.search-btn{
+    /*去掉按钮边框*/
+    -fx-background-insets: 0;
+    -fx-background-color: rgb(238, 238, 238);
+    -fx-fit-to-width: 25px;
+    -fx-fit-to-height: 25px;
+}
+/*右侧Aa字体*/
+.font-a{
     -fx-font-size: 18px;
     -fx-text-fill:  rgb(150, 150, 150);
     -fx-padding: 8 0 0 0;
     -fx-cursor: hand;
 }
-#writeBtn{
+/*写文章按钮*/
+.write-btn{
     -fx-text-fill:#FFFFFF;
     -fx-font-size: 16px;
     -fx-background-color: rgb(234, 111, 90);
@@ -42,13 +58,13 @@
     -fx-fit-to-width: 110px;
     -fx-fit-to-height: 25px;
 }
-
+/*主题部分的灰色小字体*/
 .content{
     -fx-text-fill: #999;
     -fx-font-size: 13px;
 }
-
-.no_border{
+/*滚动条去掉边框*/
+.no-border{
     -fx-background-color: transparent;
     -fx-control-inner-background: transparent;
 }

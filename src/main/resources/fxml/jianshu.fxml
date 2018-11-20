@@ -12,28 +12,31 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.niit.fxstudy.jianshu.JianShuController">
     <!--顶部面板-->
-        <AnchorPane styleClass="top_container" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+        <AnchorPane styleClass="top-container" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
             <ImageView  AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10" fx:id="logoImg">
                 <Image url="/jianshu/jianshu.png"/>
             </ImageView>
             <HBox spacing="5"
                   AnchorPane.leftAnchor="150" AnchorPane.topAnchor="10">
-                <Label text="   发现" styleClass="top_link,red_font"/>
-                <Label text="   关注" styleClass="top_link"/>
-                <Label text="   消息" styleClass="top_link"/>
+                <Label text="   发现" styleClass="top-link,red-font"/>
+                <Label text="   关注" styleClass="top-link"/>
+                <Label text="   消息" styleClass="top-link"/>
                 <padding>
                     <Insets top="10" left="10"/>
                 </padding>
             </HBox>
-            <TextField text="搜索" styleClass="search_box" fx:id="searchField"
+            <TextField text="搜索" styleClass="search-box" focusTraversable="false"
+                       fx:id="searchField"
                        AnchorPane.leftAnchor="410" AnchorPane.topAnchor="18"/>
+            <Button fx:id="searchBtn"  styleClass="search-btn"
+                    AnchorPane.leftAnchor="520" AnchorPane.topAnchor="20"/>
             <HBox spacing="25"
                   AnchorPane.rightAnchor="160" AnchorPane.topAnchor="10">
-                <Label text="Aa" styleClass="font_a"/>
+                <Label text="Aa" styleClass="font-a"/>
                 <ImageView fx:id="userImg">
                     <Image url="/jianshu/me.png"/>
                 </ImageView>
-                <Button fx:id="writeBtn" text="写文章"/>
+                <Button  fx:id="writeBtn" text="写文章" styleClass="write-btn"/>
                 <padding>
                     <Insets  right="30" bottom="10"/>
                 </padding>
@@ -46,7 +49,7 @@
     <!--中间面板-->
         <ScrollPane AnchorPane.topAnchor="70" AnchorPane.leftAnchor="0"
                     AnchorPane.rightAnchor="0"
-                    styleClass="no_border" prefHeight="580"
+                    styleClass="no-border" prefHeight="580"
                     hbarPolicy="NEVER" vbarPolicy="ALWAYS">
                 <HBox  style="-fx-background-color: #FFFFFF;">
                     <AnchorPane prefWidth="800">

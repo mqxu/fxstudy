@@ -12,7 +12,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.shape.Line;
 
 import java.net.URL;
@@ -22,7 +21,7 @@ public class JianShuController  implements Initializable {
     @FXML
     private ImageView logoImg,userImg,bannerImg;
     @FXML
-    private TextField searchField;
+    private Button searchBtn;
     @FXML
     private Button writeBtn;
     @FXML
@@ -75,11 +74,15 @@ public class JianShuController  implements Initializable {
         //简书logo图大小
         logoImg.setFitWidth(100);
         logoImg.setFitHeight(55);
+        //搜索按钮图标设置
+        Image searchImg = new Image("/jianshu/search.png");
+        ImageView searchImgView = new ImageView(searchImg);
+        searchImgView.setFitWidth(25);
+        searchImgView.setFitHeight(25);
+        searchBtn.setGraphic(searchImgView);
         //用户头像大小
         userImg.setFitWidth(40);
         userImg.setFitHeight(40);
-        //搜索框设置无焦点
-        searchField.setFocusTraversable(false);
         //写文章按钮设置图标
         Image btnImg = new Image("/jianshu/pen.png");
         ImageView imageView = new ImageView(btnImg);
