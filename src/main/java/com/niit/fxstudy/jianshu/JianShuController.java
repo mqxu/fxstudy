@@ -11,6 +11,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Line;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -90,6 +93,8 @@ public class JianShuController  implements Initializable {
         initAuthorData(authors);
     }
 
+    double y = 310.0;
+    int distance = 0;
     //封装文章数据初始化方法
     private void initArticleData(Article[] articles){
         //遍历article数组，循环创建AnchorPane
@@ -130,12 +135,20 @@ public class JianShuController  implements Initializable {
             Image articleImg = new Image("/jianshu/"+article.getThumbnail());
             ImageView articleImageView = new ImageView(articleImg);
             articleImageView.setFitWidth(160);
-            articleImageView.setFitHeight(90);
+            articleImageView.setFitHeight(100);
             AnchorPane.setTopAnchor(articleImageView, 10.0);
             AnchorPane.setLeftAnchor(articleImageView, 490.0);
-            //每篇文章的BorderPane加入垂直布局
             articlePane.getChildren().addAll(titleLabel,contentLabel,infoBox,articleImageView);
-            articleBox.getChildren().add(articlePane);
+            //每篇文章下面的线
+            Line line  = new Line();
+            line.setStartY(125.0);
+            line.setEndX(660.0);
+            line.setStartY(y+distance);
+            line.setEndY(y+distance);
+            line.setStroke(Color.web("#DEDEDE"));
+            //垂直距离自增
+            distance += 100;
+            articleBox.getChildren().addAll(articlePane,line);
         }
     }
 
