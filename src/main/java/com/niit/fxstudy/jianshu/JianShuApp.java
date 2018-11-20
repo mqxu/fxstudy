@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -16,7 +17,7 @@ public class JianShuApp extends Application {
         URL location = getClass().getResource("/fxml/jianshu.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root, 780, 590);
+        Scene scene = new Scene(root);
         scene.getStylesheets().add("/css/jianshu.css");
         primaryStage.setTitle("简书");
         //窗口最大化

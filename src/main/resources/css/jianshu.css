@@ -2,7 +2,7 @@
     -fx-background-color: #FFFFFF;
 }
 .top_container{
-   -fx-pref-height: 55px;
+   -fx-pref-height: 50px;
 }
 .top_link{
     -fx-font-size: 18px;
@@ -11,6 +11,7 @@
 }
 .top_link:hover{
     -fx-background-color: rgb(245, 245, 245);
+    -fx-cursor: hand;
 }
 .red_font{
     -fx-text-fill: rgb(234, 111, 90);
@@ -23,14 +24,12 @@
     -fx-border-radius: 30;
     -fx-background-radius: 30;
     -fx-text-fill: rgb(160, 160, 160);
-    -fx-font-size: 15px;
+    -fx-font-size: 16px;
 }
-.title_link{
-    -fx-text-fill: rgb(51, 51, 51);
+.font_a{
     -fx-font-size: 18px;
-}
-.title_link:hover{
-    -fx-underline: true;
+    -fx-text-fill:  rgb(150, 150, 150);
+    -fx-padding: 8 0 0 0;
     -fx-cursor: hand;
 }
 #writeBtn{
@@ -38,17 +37,18 @@
     -fx-font-size: 16px;
     -fx-background-color: rgb(234, 111, 90);
     -fx-border-color: rgb(234, 111, 90);
-    -fx-border-radius: 30;
-    -fx-background-radius: 30;
-    -fx-pref-width: 110px;
-    -fx-pref-height: 25px;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-fit-to-width: 110px;
+    -fx-fit-to-height: 25px;
 }
-.font_a{
-    -fx-font-size: 18px;
-    -fx-text-fill:  rgb(150, 150, 150);
-    -fx-padding: 8 0 0 0;
-}
+
 .content{
     -fx-text-fill: #999;
     -fx-font-size: 13px;
+}
+
+.no_border{
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
 }

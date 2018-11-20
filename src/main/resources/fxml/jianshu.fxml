@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.text.Text?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
-<BorderPane xmlns="http://javafx.com/javafx"
+<?import javafx.scene.control.ScrollPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.niit.fxstudy.jianshu.JianShuController">
-    <top>
-        <AnchorPane styleClass="top_container">
+    <!--顶部面板-->
+        <AnchorPane styleClass="top_container" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
             <ImageView  AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10" fx:id="logoImg">
                 <Image url="/jianshu/jianshu.png"/>
             </ImageView>
@@ -25,8 +25,10 @@
                     <Insets top="10" left="10"/>
                 </padding>
             </HBox>
+            <TextField text="搜索" styleClass="search_box" fx:id="searchField"
+                       AnchorPane.leftAnchor="410" AnchorPane.topAnchor="18"/>
             <HBox spacing="25"
-                  AnchorPane.rightAnchor="120" AnchorPane.topAnchor="10">
+                  AnchorPane.rightAnchor="160" AnchorPane.topAnchor="10">
                 <Label text="Aa" styleClass="font_a"/>
                 <ImageView fx:id="userImg">
                     <Image url="/jianshu/me.png"/>
@@ -36,13 +38,53 @@
                     <Insets  right="30" bottom="10"/>
                 </padding>
             </HBox>
-            <TextField text="搜索" styleClass="search_box" fx:id="searchField"
-                       AnchorPane.leftAnchor="410" AnchorPane.topAnchor="18"/>
             <Line AnchorPane.bottomAnchor="0"
                   startY="50.0" endX="1400" endY="50.0"
                   stroke="rgb(240,240,240)"/>
         </AnchorPane>
-    </top>
-    <center>
-    </center>
-</BorderPane>
+
+    <!--中间面板-->
+        <ScrollPane AnchorPane.topAnchor="70" AnchorPane.leftAnchor="0"
+                    AnchorPane.rightAnchor="0"
+                    styleClass="no_border" prefHeight="580"
+                    hbarPolicy="NEVER" vbarPolicy="ALWAYS">
+                <HBox  style="-fx-background-color: #FFFFFF;">
+                    <AnchorPane prefWidth="800">
+                        <ImageView fx:id="bannerImg"
+                                   AnchorPane.leftAnchor="125" AnchorPane.topAnchor="20">
+                            <Image url="/jianshu/banner.png"/>
+                        </ImageView>
+                        <Line AnchorPane.topAnchor="340"
+                              startX="125.0" startY="310.0" endX="770" endY="310.0"
+                              stroke="rgb(240,240,240)"/>
+                        <VBox spacing="20" fx:id="articleBox"
+                              AnchorPane.leftAnchor="120" AnchorPane.topAnchor="350">
+                        </VBox>
+                    </AnchorPane>
+                    <AnchorPane style="-fx-background-color: #FFFFFF"
+                                prefWidth="460">
+                        <VBox spacing="18" fx:id="trendingBox"
+                              AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
+                        </VBox>
+                        <padding>
+                            <Insets right="80"/>
+                        </padding>
+                        <Label text="推荐作者" styleClass="content"
+                               AnchorPane.topAnchor="430" AnchorPane.leftAnchor="15"/>
+                        <ImageView AnchorPane.topAnchor="430" AnchorPane.leftAnchor="230">
+                            <Image url="/jianshu/refresh.png"/>
+                        </ImageView>
+                        <Label text="换一批" styleClass="content"
+                               AnchorPane.topAnchor="430" AnchorPane.leftAnchor="250"/>
+                        <VBox fx:id="authorBox" spacing="10"
+                              AnchorPane.topAnchor="450" AnchorPane.leftAnchor="15"/>
+                        <padding>
+                            <Insets left="30"/>
+                        </padding>
+                    </AnchorPane>
+                </HBox>
+        </ScrollPane>
+    <padding>
+        <Insets bottom="20"/>
+    </padding>
+</AnchorPane>

@@ -27,3 +27,11 @@
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/86927644.jpg)
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/62319676.jpg)
 - [预览视频](https://www.screencast.com/t/j6fM0op64u)
+
+## 3.仿制简书主页
+- 文章、热门、作者数据封装成了对象数组
+- 各种布局组合使用
+- 合理使用样式表
+- 效果图
+![](http://pdnalatfa.bkt.clouddn.com/18-11-20/52566791.jpg)
+- [预览视频]()
