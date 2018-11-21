@@ -8,7 +8,7 @@
 ![](http://pdnalatfa.bkt.clouddn.com/18-11-18/67941037.jpg)
 - [预览视频](https://www.screencast.com/t/Z5M9MeVbb0jK)
 
-## 1.锚点布局示例程序
+## 1.StackPane布局示例程序
 - StackPaneApp
 - StackPaneController
 - stackpane.fxml
