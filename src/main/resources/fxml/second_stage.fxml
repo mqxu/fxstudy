@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.niit.fxstudy.multistage.MultiStageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Label  text="第二个舞台"
+            AnchorPane.topAnchor="100" AnchorPane.leftAnchor="100"/>
+</AnchorPane>

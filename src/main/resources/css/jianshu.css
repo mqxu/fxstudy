@@ -63,6 +63,11 @@
     -fx-text-fill: #999;
     -fx-font-size: 13px;
 }
+.view-all{
+    -fx-pref-width: 280px;
+    -fx-pref-height: 35px;
+    -fx-background-color: rgb(247, 247, 247);
+}
 /*滚动条去掉边框*/
 .no-border{
     -fx-background-color: transparent;

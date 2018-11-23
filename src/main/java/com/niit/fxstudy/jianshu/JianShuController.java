@@ -65,7 +65,8 @@ public class JianShuController  implements Initializable {
             new Author("王诗翔","4.png",776,32),
             new Author("简书","5.png",878,76),
             new Author("格列柯南","1.png",433,12),
-            new Author("吴晓布","2.png",226,23)
+            new Author("吴晓布","2.png",226,23),
+            new Author("格列柯南","1.png",433,12)
     };
 
 
@@ -206,5 +207,10 @@ public class JianShuController  implements Initializable {
             authorPane.getChildren().addAll(avatarImageView,nickNameLabel,infoLabel,followLabel);
             authorBox.getChildren().add(authorPane);
         }
+        Button allBtn = new Button("查看全部");
+        allBtn.getStyleClass().addAll("view-all","content");
+        AnchorPane.setTopAnchor(allBtn, authors.length*45.0+10);
+        AnchorPane.setLeftAnchor(allBtn, 10.0);
+        authorBox.getChildren().add(allBtn);
     }
 }

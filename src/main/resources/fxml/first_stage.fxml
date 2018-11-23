@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.niit.fxstudy.multistage.MultiStageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Button  text="去第二个窗口" onAction="#gotoSecondStage"
+    AnchorPane.topAnchor="100" AnchorPane.leftAnchor="200"/>
+    <Button fx:id="closeBtn" text="关闭" onAction="#closeStage"
+            AnchorPane.topAnchor="100" AnchorPane.leftAnchor="400"/>
+</AnchorPane>
